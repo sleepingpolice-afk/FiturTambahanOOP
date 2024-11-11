@@ -86,7 +86,7 @@ public class Pocong : Enemy
     }
 }
 
-ppublic class Legendcoak : Enemy
+public class Legendcoak : Enemy
 {
     private Random random = new Random();
     private bool ultimateActivated = false;

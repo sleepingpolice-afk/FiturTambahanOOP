@@ -41,3 +41,21 @@ public class HealthPotionDecorator : ItemDecorator
         Console.WriteLine($"{character.Name} mendapat tambahan 20 HP!");
     }
 }
+
+public class MoneyBag : Item
+{
+    public int Amount { get; set; }
+
+    public MoneyBag(int amount)
+    {
+        Name = "Money Bag";
+        Amount = amount;
+    }
+
+    public void TransferMoneyToCharacter(Character character)
+    {
+        character.GainMoney(Amount);
+        Console.WriteLine($"{Name} memberikan uang sebesar {Amount} kepada {character.Name}.");
+        Amount = 0; // Setelah dipindahkan, uang habis
+    }
+}

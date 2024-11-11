@@ -6,6 +6,7 @@ public class Character
     public int Level { get; set; }
     public int AttackPower { get; set; }
     public int Money { get; set; } // Tambahkan properti uang
+    public CurrencyManager CurrencyManager { get; set; } = new CurrencyManager();
 
     private Character()
     {
@@ -40,5 +41,10 @@ public class Character
     {
         Money += amount;
         Console.WriteLine($"{Name} mendapatkan {amount} uang. Total uang: {Money}");
+    }
+
+    public void SpendMoney(int amount)
+    {
+        CurrencyManager.DeductMoney(amount);
     }
 }
