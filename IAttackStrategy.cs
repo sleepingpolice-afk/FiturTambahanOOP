@@ -1,24 +1,18 @@
-// Strategy Pattern untuk variasi serangan.
-public interface IAttackStrategy
-{
-    void Attack(Character character, Enemy enemy);
-}
-
-public class NormalAttack : IAttackStrategy
+public class ShortAttack : IAttackStrategy
+//Melakukan serangan jarak jauh dN pendek
 {
     public void Attack(Character character, Enemy enemy)
     {
-        Console.WriteLine($"{character.Name} melakukan serangan normal!");
+        Console.WriteLine($"{character.Name} melakukan serangan jarak dekat!");
         enemy.TakeDamage(character.AttackPower);
     }
 }
 
-public class StrongAttack : IAttackStrategy
+public class LongRangeAttack : IAttackStrategy
 {
     public void Attack(Character character, Enemy enemy)
     {
-        int strongDamage = character.AttackPower * 2;
-        Console.WriteLine($"{character.Name} melakukan serangan kuat!");
-        enemy.TakeDamage(strongDamage);
+        Console.WriteLine($"{character.Name} melakukan serangan jarak jauh!");
+        enemy.TakeDamage(character.AttackPower + 5);
     }
 }
