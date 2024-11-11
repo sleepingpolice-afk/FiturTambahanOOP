@@ -6,7 +6,7 @@ public abstract class Enemy
     public int AttackPower { get; set; }
     public int Money { get; set; } //uang musuh
 
-    public abstract void TakeDamage(int damage);
+    public abstract void TakeDamage(int damage, Character character);
     public bool Alive()
     {
         return Health > 0;

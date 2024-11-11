@@ -41,9 +41,4 @@ public class Character
         Money += amount;
         Console.WriteLine($"{Name} mendapatkan {amount} uang. Total uang: {Money}");
     }
-
-    public void Attack(Enemy enemy, IAttackStrategy attackStrategy)
-    {
-        attackStrategy.Attack(this, enemy);
-    }
 }
