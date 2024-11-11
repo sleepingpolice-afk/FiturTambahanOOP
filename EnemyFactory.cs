@@ -33,6 +33,16 @@ public class Pocong : Enemy
         AttackPower = 10;
     }
 
+public class Legendcoak : Enemy
+{
+    public Legendcoak()
+    {
+        Name = "Kecoak Legendaris";
+        Health = 200;
+        AttackPower = 30;
+    }
+}
+
     public override void TakeDamage(int damage)
     {
         Health -= damage;
@@ -52,9 +62,13 @@ public class EnemyFactory
         {
             return new Pocong();
         }
+        else if (level == 3)
+        {
+            return new Legendcoak();
+        }
         else
         {
-            return new Tuyul(); // Default enemy for higher levels
+            return new Tuyul();
         }
     }
 }
