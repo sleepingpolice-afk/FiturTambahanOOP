@@ -7,6 +7,10 @@ public abstract class Enemy
     public int Money { get; set; } //uang musuh
 
     public abstract void TakeDamage(int damage);
+    public bool Alive()
+    {
+        return Health > 0;
+    }
 }
 
 public class Tuyul : Enemy
@@ -15,16 +19,18 @@ public class Tuyul : Enemy
 
     public Tuyul()
     {
-        Name = "Tuyul";
+        Name = "Tuyul; Scurry Impish Little Trickster";
         Health = 50;
         AttackPower = 5;
         Money = 30; // Uang yang dimiliki Tuyul
     }
+    
 
     public override void TakeDamage(int damage, Character character)
     {
         Health -= damage;
         Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
+        if (!Alive()) return;
 
         // Memiliki probabilitas 40% untuk mencuri uang character
         if (random.NextDouble() < 0.4)
@@ -50,7 +56,7 @@ public class Pocong : Enemy
 
     public Pocong()
     {
-        Name = "Pocong";
+        Name = "Pocong; Wraith in shrouded Bound";
         Health = 80;
         AttackPower = 10;
         Money = 50;
@@ -60,6 +66,7 @@ public class Pocong : Enemy
     {
         Health -= damage;
         Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
+        if (!IsAlive()) return;
 
         // Memiliki probabilitas 40% untuk menyerang dari belakang
         if (random.NextDouble() < 0.4)
@@ -97,11 +104,12 @@ ppublic class Legendcoak : Enemy
     {
         Health -= damage;
         Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
+        if (!IsAlive()) return;
 
         // Memiliki 40% kemungkinan mengeluarkan Ultimate saat health < 50%
         if (Health <= 100 && !ultimateActivated && random.NextDouble() < 0.4)
         {
-            Console.WriteLine($"{Name} mengaktifkan Ultimate: The Flying Monster!");
+            Console.WriteLine($"{Name} mengaktifkan Ultimate: The Flying Horror!");
             AttackPower = (int)(AttackPower * 1.1);
             ultimateActivated = true;
             // Harusnya ditambah hanya bisa diserang menggunakan long range attack
@@ -115,7 +123,7 @@ ppublic class Legendcoak : Enemy
         }
         else if (attackChoice < 0.8)
         {
-            Console.WriteLine($"{Name} mengeluarkan jurus 'Pale Lurker Beneath the Shadow of The Dawn'");
+            Console.WriteLine($"{Name} mengeluarkan jurus 'Monster Lurks Beneath the Shadow of The Dawn'");
         }
         else
         {
