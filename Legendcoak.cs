@@ -30,10 +30,12 @@ public class Legendcoak : Enemy
         double attackChoice = random.NextDouble();
         if (attackChoice < 0.4)
         {
+            character.Health -= 10;
             Console.WriteLine($"{Name} mengeluarkan jurus 'The Ancient Beast; Wisdom of the Old World'. Sisa HP: {character.Health}");
         }
         else if (attackChoice < 0.8)
         {
+            character.Health -= 15;
             Console.WriteLine($"{Name} mengeluarkan jurus 'Monster Lurks Beneath the Shadow of The Dawn'. Sisa HP: {character.Health}");
         }
         else
