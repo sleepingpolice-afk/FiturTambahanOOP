@@ -1,3 +1,4 @@
+using System;
 public class Character
 {
     private static Character instance;

@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-public class BattleSystem
-{
-    public void StartBattle(Character character, Enemy enemy, IAttackStrategy attackStrategy)
-    {
-        Console.WriteLine($"Pertarungan dimulai melawan {enemy.Name}!");
-        attackStrategy.Attack(character, enemy);
-    }
-}
-=======
 using System;
 
 public class BattleSystem
@@ -55,4 +45,4 @@ public class BattleSystem
         }
     }
 }
->>>>>>> 5ccf614e5e43041a081f848414811781b3297e60
+

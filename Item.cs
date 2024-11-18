@@ -1,9 +1,7 @@
 public abstract class Item
 {
     public string Name { get; set; }
-<<<<<<< HEAD
-}
-=======
+
 }
 
 public class HealthPotion : Item
@@ -61,4 +59,4 @@ public class MoneyBag : Item
         Amount = 0; // Setelah dipindahkan, uang habis
     }
 }
->>>>>>> 5ccf614e5e43041a081f848414811781b3297e60
+

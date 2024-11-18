@@ -1,3 +1,5 @@
+using System;
+
 public class CurrencyManager
 {
     public int TotalMoney { get; private set; }

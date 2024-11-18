@@ -1,23 +1,35 @@
 public class Pocong : Enemy
 {
+    private Random random = new Random();
+
     public Pocong()
     {
-        Name = "Pocong";
+        Name = "Pocong; Wraith in shrouded Bound";
         Health = 80;
         AttackPower = 10;
+        Money = 50;
     }
 
-    public override void TakeDamage(int damage)
+    public override void TakeDamage(int damage, Character character)
     {
         Health -= damage;
-        if (Health > 0)
+        Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
+        if (!IsAlive()) return;
+
+        // Memiliki probabilitas 40% untuk menyerang dari belakang
+        if (random.NextDouble() < 0.4)
         {
-            Console.WriteLine($"\n{Name} menerima {damage} damage! Sisa HP: {Health}.");
-            Console.WriteLine($"{Name} mulai loncat-loncat seperti guling! Hati-hati, dia bisa jadi gulingmu saat tidur nanti!");
+            Console.WriteLine($"{Name} menyerang dari belakang!");
+            character.Health -= AttackPower;
+            Console.WriteLine($"{character.Name} kehilangan {AttackPower} HP. Sisa HP: {character.Health}");
         }
-        else
+
+        // Saat Health kurang dari 50%, memiliki 60% kemungkinan untuk heal 10%
+        if (Health <= 40 && random.NextDouble() < 0.6)
         {
-            Console.WriteLine($"\n{Name} terjatuh dengan suara keras, dan tidak akan menjadi gulingmu nanti malam :)");
+            int healAmount = (int)(0.1 * Health);
+            Health += healAmount;
+            Console.WriteLine($"{Name} memulihkan {healAmount} HP. Total HP sekarang: {Health}");
         }
     }
 }

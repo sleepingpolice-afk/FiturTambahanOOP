@@ -1,23 +1,36 @@
 public class Tuyul : Enemy
 {
+    private Random random = new Random();
+
     public Tuyul()
     {
-        Name = "Tuyul";
+        Name = "Tuyul; Scurry Impish Little Trickster";
         Health = 50;
         AttackPower = 5;
+        Money = 30; // Uang yang dimiliki Tuyul
     }
+    
 
-    public override void TakeDamage(int damage)
+    public override void TakeDamage(int damage, Character character)
     {
         Health -= damage;
-        if (Health > 0)
+        Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
+        if (!Alive()) return;
+
+        // Memiliki probabilitas 40% untuk mencuri uang character
+        if (random.NextDouble() < 0.4)
         {
-            Console.WriteLine($"\n{Name} menerima {damage} damage! Sisa HP: {Health}.");
-            Console.WriteLine($"{Name} terus berusaha menyerang untuk mencuri uangmu lalu digunakan untuk cari makan di Kutek");
+            int stolenAmount = 10;
+            character.DeductMoney(stolenAmount);
+            Console.WriteLine($"{Name} mencuri uangmu sebesar {stolenAmount}!");
         }
-        else
+
+        // Menawarkan uang saat HP < 30%
+        if (Health <= 15)
         {
-            Console.WriteLine($"\n{Name} jatuh ke tanah, tapi tenang saja, dia masih punya uang untuk membeli makan di Kutek :)");
+            Console.WriteLine($"{Name} menawarkan uang sebesar {Money} untuk ganti nyawanya. Terima?");
+            character.AddMoney(Money);
+            Health = 0; // Tuyul menyerah
         }
     }
 }
