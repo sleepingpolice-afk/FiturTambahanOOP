@@ -12,7 +12,7 @@ public class Legendcoak : Enemy
         Money = 100;
     }
 
-    public override void TakeDamage(int damage, Character character)
+    public override void TakeDamage(float damage, Character character)
     {
         Health -= damage;
         Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
@@ -30,11 +30,11 @@ public class Legendcoak : Enemy
         double attackChoice = random.NextDouble();
         if (attackChoice < 0.4)
         {
-            Console.WriteLine($"{Name} mengeluarkan jurus 'The Ancient Beast; Wisdom of the Old World'");
+            Console.WriteLine($"{Name} mengeluarkan jurus 'The Ancient Beast; Wisdom of the Old World'. Sisa HP: {character.Health}");
         }
         else if (attackChoice < 0.8)
         {
-            Console.WriteLine($"{Name} mengeluarkan jurus 'Monster Lurks Beneath the Shadow of The Dawn'");
+            Console.WriteLine($"{Name} mengeluarkan jurus 'Monster Lurks Beneath the Shadow of The Dawn'. Sisa HP: {character.Health}");
         }
         else
         {

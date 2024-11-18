@@ -3,10 +3,10 @@ public class Character
 {
     private static Character? instance;
     public string Name { get; set; }
-    public int Health { get; set; }
+    public float Health { get; set; }
     public int Level { get; set; }
-    public int AttackPower { get; set; }
-    public int Money { get; set; } // Tambahkan properti uang
+    public float AttackPower { get; set; }
+    public int Money { get; set; }
     public CurrencyManager CurrencyManager { get; set; } = new CurrencyManager();
 
     private Character()
@@ -15,7 +15,7 @@ public class Character
         Health = 100;
         Level = 1;
         AttackPower = 10;
-        Money = 100; // Uang untuk awal
+        Money = 100;
     }
 
     public static Character Instance
@@ -37,7 +37,6 @@ public class Character
         Health += 20;
         Console.WriteLine($"{Name} naik level menjadi {Level}. HP: {Health}, Attack Power: {AttackPower}");
     }
-
     public void GainMoney(int amount)
     {
         Money += amount;

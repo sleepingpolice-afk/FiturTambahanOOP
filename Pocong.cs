@@ -10,7 +10,7 @@ public class Pocong : Enemy
         Money = 50;
     }
 
-    public override void TakeDamage(int damage, Character character)
+    public override void TakeDamage(float damage, Character character)
     {
         Health -= damage;
         Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");

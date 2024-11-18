@@ -3,3 +3,13 @@ C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9
 C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
 C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
 C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.exe
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.deps.json
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.dll
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.pdb
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.dll
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\refint\Game-Design-Development.dll
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll

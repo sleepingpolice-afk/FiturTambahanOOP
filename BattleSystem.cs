@@ -1,3 +1,5 @@
+using System;
+
 public class BattleSystem
 {
     public void ExecuteBattle(Character character, Enemy enemy)
@@ -9,17 +11,17 @@ public class BattleSystem
             Console.WriteLine("\nPilih jenis serangan:");
             Console.WriteLine("1. Serangan jarak dekat");
             Console.WriteLine("2. Serangan jarak jauh");
+            Console.WriteLine("Pilih: ");
 
-            IAttackStrategy? attackStrategy = null;
             string choice = Console.ReadLine();
-            IAttackStrategy attackStrategy = new ShortAttack();
+            IAttackStrategy attackStrategy;
 
             switch (choice)
             {
                 case "1":
                     if (enemy is Legendcoak legendcoak && legendcoak.UltimateActivated)
                     {
-                        Console.WriteLine("Serangan jarak dekat akan selalu meleset saat musuh mengaktifkan ultimate!");
+                        Console.WriteLine("Serangan jarak dekat akan selalu meleset saat Legendcoak mengaktifkan ultimate!");
                         continue;
                     }
                     attackStrategy = new ShortAttack();
@@ -32,10 +34,7 @@ public class BattleSystem
                     continue;
             }
 
-            if (attackStrategy != null)
-            {
-                attackStrategy.Attack(character, enemy);
-            }
+            attackStrategy.Attack(character, enemy);
         }
 
         if (character.Health <= 0)
@@ -45,7 +44,7 @@ public class BattleSystem
         else if (!enemy.Alive())
         {
             Console.WriteLine($"{character.Name} mengalahkan {enemy.Name} dan mendapatkan uang dari musuh sebesar {enemy.Money}!");
-            character.GainMoney(enemy.Money);
+            character.CurrencyManager.AddMoney(enemy.Money);
         }
     }
 }
