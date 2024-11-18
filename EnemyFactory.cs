@@ -1,5 +1,3 @@
-using System;
-
 public class EnemyFactory
 {
     public static Enemy CreateEnemy(int level)
@@ -14,17 +12,11 @@ public class EnemyFactory
         }
         else if (level == 3)
         {
-            return new KecoaTerbang(); // Level bos
+            return new Legendcoak();; // Level bos
         }
         else
         {
-            return new Tuyul(); // Default enemy untuk level lebih tinggi
-
-            return new Legendcoak();
-        }
-        else
-        {
-            return new Tuyul();
+            return new Tuyul();// Default to Legendcoak for higher levels
         }
     }
 }

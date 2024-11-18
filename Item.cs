@@ -1,8 +1,8 @@
 public abstract class Item
 {
-    public string Name { get; set; }
-
+    public string Name { get; set; } = "Unknown";
 }
+
 
 public class HealthPotion : Item
 {

@@ -21,7 +21,7 @@ public class Tuyul : Enemy
         if (random.NextDouble() < 0.4)
         {
             int stolenAmount = 10;
-            character.DeductMoney(stolenAmount);
+            character.SpendMoney(stolenAmount);
             Console.WriteLine($"{Name} mencuri uangmu sebesar {stolenAmount}!");
         }
 
@@ -29,7 +29,7 @@ public class Tuyul : Enemy
         if (Health <= 15)
         {
             Console.WriteLine($"{Name} menawarkan uang sebesar {Money} untuk ganti nyawanya. Terima?");
-            character.AddMoney(Money);
+            character.GainMoney(Money);
             Health = 0; // Tuyul menyerah
         }
     }

@@ -1,5 +1,3 @@
-using System;
-
 public class BattleSystem
 {
     public void ExecuteBattle(Character character, Enemy enemy)
@@ -12,12 +10,18 @@ public class BattleSystem
             Console.WriteLine("1. Serangan jarak dekat");
             Console.WriteLine("2. Serangan jarak jauh");
 
+            IAttackStrategy? attackStrategy = null;
             string choice = Console.ReadLine();
-            IAttackStrategy attackStrategy = null;
+            IAttackStrategy attackStrategy = new ShortAttack();
 
             switch (choice)
             {
                 case "1":
+                    if (enemy is Legendcoak legendcoak && legendcoak.UltimateActivated)
+                    {
+                        Console.WriteLine("Serangan jarak dekat akan selalu meleset saat musuh mengaktifkan ultimate!");
+                        continue;
+                    }
                     attackStrategy = new ShortAttack();
                     break;
                 case "2":
@@ -30,7 +34,7 @@ public class BattleSystem
 
             if (attackStrategy != null)
             {
-                character.Attack(character, enemy);
+                attackStrategy.Attack(character, enemy);
             }
         }
 
@@ -45,4 +49,3 @@ public class BattleSystem
         }
     }
 }
-

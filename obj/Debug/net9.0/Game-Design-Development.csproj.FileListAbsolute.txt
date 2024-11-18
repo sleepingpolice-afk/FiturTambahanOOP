@@ -1,0 +1,5 @@
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
+C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json

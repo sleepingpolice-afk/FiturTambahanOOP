@@ -1,7 +1,7 @@
 using System;
 public class Character
 {
-    private static Character instance;
+    private static Character? instance;
     public string Name { get; set; }
     public int Health { get; set; }
     public int Level { get; set; }

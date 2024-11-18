@@ -1,7 +1,7 @@
 public class Legendcoak : Enemy
 {
     private Random random = new Random();
-    private bool ultimateActivated = false;
+    public bool UltimateActivated { get; private set; } = false;
     private int democracyRounds = 0;
 
     public Legendcoak()
@@ -16,18 +16,17 @@ public class Legendcoak : Enemy
     {
         Health -= damage;
         Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
-        if (!IsAlive()) return;
+        if (!Alive()) return;
 
-        // Memiliki 40% kemungkinan mengeluarkan Ultimate saat health < 50%
-        if (Health <= 100 && !ultimateActivated && random.NextDouble() < 0.4)
+        // Activate Ultimate ability when Health < 50% and not yet activated
+        if (Health <= 100 && !UltimateActivated && random.NextDouble() < 0.4)
         {
-            Console.WriteLine($"{Name} mengaktifkan Ultimate: The Flying Horror!");
+            Console.WriteLine($"{Name} mengaktifkan Ultimate: The Flying Horror! Hanya serangan jarak jauh yang dapat mengenai musuh.");
             AttackPower = (int)(AttackPower * 1.1);
-            ultimateActivated = true;
-            // Harusnya ditambah hanya bisa diserang menggunakan long range attack
+            UltimateActivated = true;
         }
 
-        // Serangan memiliki probabilitas
+        // Random special attacks
         double attackChoice = random.NextDouble();
         if (attackChoice < 0.4)
         {
@@ -43,7 +42,7 @@ public class Legendcoak : Enemy
             democracyRounds = 3;
         }
 
-        // Efek 'The Democracy'
+        // Effect of 'The Democracy'
         if (democracyRounds > 0)
         {
             character.Health -= 5;

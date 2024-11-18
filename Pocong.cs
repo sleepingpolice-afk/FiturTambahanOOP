@@ -14,7 +14,7 @@ public class Pocong : Enemy
     {
         Health -= damage;
         Console.WriteLine($"{Name} menerima {damage} damage! Sisa HP: {Health}");
-        if (!IsAlive()) return;
+        if (!Alive()) return;
 
         // Memiliki probabilitas 40% untuk menyerang dari belakang
         if (random.NextDouble() < 0.4)
