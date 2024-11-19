@@ -2,8 +2,63 @@ public abstract class Item
 {
     public string Name { get; set; } = "Unknown";
     public abstract void Use(Character character);
+
+    private static Dictionary<string, int> items = new Dictionary<string, int>();
+    private const int MaxItemCount = 10; // Batas jumlah maksimum item yang dapat dimiliki
+
+    // Alur dari penambahan item pada saat permainan akan diserahkan ke grup lain yang mendapatkan game ini
+    // Method-method penambahan dan pengurangan item berikut akan digunakan untuk membatasi jumlah item
+    
+    public static bool AddItem(string itemName, int quantity)
+    {
+        int currentCount = items.ContainsKey(itemName) ? items[itemName] : 0;
+
+        if (currentCount + quantity > MaxItemCount)
+        {
+            Console.WriteLine($"Tidak bisa menambahkan {quantity} {itemName}. Jumlah item melebihi batas maksimum ({MaxItemCount}).");
+            return false;
+        }
+
+        if (items.ContainsKey(itemName))
+        {
+            items[itemName] += quantity;
+        }
+        else
+        {
+            items[itemName] = quantity;
+        }
+
+        Console.WriteLine($"{quantity} {itemName} ditambahkan ke inventori.");
+        return true;
+    }
+
+    public static bool UseItem(string itemName, Character character)
+    {
+        if (items.ContainsKey(itemName) && items[itemName] > 0)
+        {
+            items[itemName]--;
+            Console.WriteLine($"{itemName} digunakan. Sisa: {items[itemName]}");
+            return true;
+        }
+        else
+        {
+            Console.WriteLine($"Tidak ada {itemName} yang tersisa di inventori.");
+            return false;
+        }
+    }
+
+    public static void ShowInventory()
+    {
+        Console.WriteLine("Isi Inventori:");
+        foreach (var item in items)
+        {
+            Console.WriteLine($"{item.Key}: {item.Value}");
+        }
+    }
 }
 
+
+// Item yang terdapat pada inventori
 public class HealthPotion : Item
 {
     public int HealthRestore { get; set; }
