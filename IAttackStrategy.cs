@@ -1,21 +1,25 @@
 using System;
 
+
 public interface IAttackStrategy
 {
-    void Attack(Character character, Enemy enemy);
+    bool Attack(Character character, Enemy enemy);
 }
+
 
 public class LongRangeAttack : IAttackStrategy
 {
     private Random random = new Random();
 
-    public void Attack(Character character, Enemy enemy)
+
+    public bool Attack(Character character, Enemy enemy)
     {
         if (random.NextDouble() < 0.2) // 20% chance to miss
         {
             Console.WriteLine($"{character.Name}'s long-range attack missed!");
-            return;
+            return false;
         }
+
 
         // Calculate damage with critical hit chance
         float damage = character.AttackPower + 5; // Base damage for long range
@@ -25,23 +29,28 @@ public class LongRangeAttack : IAttackStrategy
             Console.WriteLine("Critical Hit!");
         }
 
+
         Console.WriteLine($"{character.Name} melakukan serangan jarak jauh dengan {damage} damage!");
         enemy.TakeDamage(damage, character);
+        return true;
     }
 }
+
 
 public class ShortAttack : IAttackStrategy
 {
     private Random random = new Random();
 
-    public void Attack(Character character, Enemy enemy)
+
+    public bool Attack(Character character, Enemy enemy)
     {
         // Check if the attack is a miss
         if (random.NextDouble() < 0.05) // 5% chance to miss
         {
             Console.WriteLine($"{character.Name}'s short-range attack missed!");
-            return;
+            return false;
         }
+
 
         // Calculate damage with critical hit chance
         float damage = character.AttackPower; // Base damage for short range
@@ -51,7 +60,9 @@ public class ShortAttack : IAttackStrategy
             Console.WriteLine("Critical Hit!");
         }
 
+
         Console.WriteLine($"{character.Name} melakukan serangan jarak dekat dengan {damage} damage!");
         enemy.TakeDamage(damage, character);
+        return true;
     }
 }

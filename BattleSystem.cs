@@ -4,6 +4,7 @@ public class BattleSystem
     {
         Console.WriteLine($"\n--- Pertarungan Dimulai: {enemy.Name} ---");
 
+
         while (enemy.Alive() && character.Health > 0)
         {
             Console.WriteLine("\nPilih tindakan:");
@@ -11,8 +12,10 @@ public class BattleSystem
             Console.WriteLine("2. Serangan jarak jauh");
             Console.WriteLine("3. Healing Potion");
 
+
             string choice = Console.ReadLine();
             IAttackStrategy attackStrategy;
+
 
             switch (choice)
             {
@@ -20,6 +23,7 @@ public class BattleSystem
                     if (enemy is Legendcoak legendcoak && legendcoak.UltimateActivated)
                     {
                         Console.WriteLine("Serangan jarak dekat akan selalu meleset saat musuh mengaktifkan ultimate!");
+                        legendcoak.TakeDamage(0, character); //saat meleset musuh menyerang balik
                         continue;
                     }
                     attackStrategy = new ShortAttack();
@@ -28,16 +32,22 @@ public class BattleSystem
                     attackStrategy = new LongRangeAttack();
                     break;
                 case "3":
-                    HealthPotion potion = new HealthPotion();
-                    potion.Use(character);
+                    UseHealingPotion(character);
                     continue;
                 default:
                     Console.WriteLine("Pilihan tidak valid. Coba lagi.");
                     continue;
             }
 
-            attackStrategy.Attack(character, enemy);
+
+            bool attackMissed = !attackStrategy.Attack(character, enemy);
+            if (attackMissed)
+            {
+                Console.WriteLine($"{enemy.Name} memanfaatkan kesempatan serangan meleset!");
+                enemy.TakeDamage(0, character); // enemy menyerang balik
+            }
         }
+
 
         if (character.Health <= 0)
         {
@@ -48,7 +58,13 @@ public class BattleSystem
             Console.WriteLine($"{character.Name} mengalahkan {enemy.Name} dan mendapatkan uang dari musuh sebesar {enemy.Money}!");
             character.CurrencyManager.AddMoney(enemy.Money);
         }
+    }
 
-        HealthPotion.ResetUsageCount();
+
+    private void UseHealingPotion(Character character)
+    {
+        int healAmount = 20;
+        character.Health += healAmount;
+        Console.WriteLine($"{character.Name} menggunakan potion dan memulihkan {healAmount} HP. Sisa HP: {character.Health}");
     }
 }
