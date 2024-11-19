@@ -32,7 +32,7 @@ public class Game
             Thread.Sleep(1000);
             Console.WriteLine("Langit-langit gua itu tinggi, stalaktit menggantung seperti taring yang mengancam untuk menerkammu.");
             Thread.Sleep(1000);
-            Console.WriteLine("Kau berdigig. Meneruskan perjalananmu...");
+            Console.WriteLine("Kau bergidik. Meneruskan perjalananmu...");
             Thread.Sleep(2000);
 
             Console.WriteLine("> Kau yakin kau mencapai pusat gua. Tempat itu lebar. Kau mendengar gemerisik. Sesuatu sepertinya mengawasimu.");
