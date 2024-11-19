@@ -44,7 +44,7 @@ public abstract class ItemDecorator : Item
         this.item = item;
     }
 
-    public virtual void Use(Character character)
+    public override void Use(Character character)
     {
         Console.WriteLine($"Menggunakan {item.Name}");
     }
@@ -72,7 +72,7 @@ public class MoneyBag : Item
         Amount = amount;
     }
 
-    public void TransferMoneyToCharacter(Character character)
+    public override void Use(Character character)
     {
         character.GainMoney(Amount);
         Console.WriteLine($"{Name} memberikan uang sebesar {Amount} kepada {character.Name}.");

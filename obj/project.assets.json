@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\azras\\.nuget\\packages\\": {}
+    "C:\\Users\\Mutia Casella\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\azras\\Documents\\The Haunted Isle\\Game-Design-Development\\Game-Design-Development.csproj",
+      "projectUniqueName": "D:\\2-Kuliah\\2-Tugas\\2-OOP\\6-The Haunted Isle\\Game-Design-Development\\Game-Design-Development.csproj",
       "projectName": "Game-Design-Development",
-      "projectPath": "C:\\Users\\azras\\Documents\\The Haunted Isle\\Game-Design-Development\\Game-Design-Development.csproj",
-      "packagesPath": "C:\\Users\\azras\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\azras\\Documents\\The Haunted Isle\\Game-Design-Development\\obj\\",
+      "projectPath": "D:\\2-Kuliah\\2-Tugas\\2-OOP\\6-The Haunted Isle\\Game-Design-Development\\Game-Design-Development.csproj",
+      "packagesPath": "C:\\Users\\Mutia Casella\\.nuget\\packages\\",
+      "outputPath": "D:\\2-Kuliah\\2-Tugas\\2-OOP\\6-The Haunted Isle\\Game-Design-Development\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\azras\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Mutia Casella\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
