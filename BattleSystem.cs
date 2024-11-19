@@ -28,7 +28,8 @@ public class BattleSystem
                     attackStrategy = new LongRangeAttack();
                     break;
                 case "3":
-                    UseHealingPotion(character);
+                    HealthPotion potion = new HealthPotion();
+                    potion.Use(character);
                     continue;
                 default:
                     Console.WriteLine("Pilihan tidak valid. Coba lagi.");
@@ -47,12 +48,7 @@ public class BattleSystem
             Console.WriteLine($"{character.Name} mengalahkan {enemy.Name} dan mendapatkan uang dari musuh sebesar {enemy.Money}!");
             character.CurrencyManager.AddMoney(enemy.Money);
         }
-    }
 
-    private void UseHealingPotion(Character character)
-    {
-        int healAmount = 20;
-        character.Health += healAmount;
-        Console.WriteLine($"{character.Name} menggunakan potion dan memulihkan {healAmount} HP. Sisa HP: {character.Health}");
+        HealthPotion.ResetUsageCount();
     }
 }

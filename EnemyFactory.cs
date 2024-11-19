@@ -12,11 +12,11 @@ public class EnemyFactory
         }
         else if (level == 3)
         {
-            return new Legendcoak();; // Level bos
+            return new Legendcoak(); // Level bos
         }
         else
         {
-            return new Tuyul();// Default to Legendcoak for higher levels
+            return new Tuyul(); // Default to Legendcoak for higher levels
         }
     }
 }

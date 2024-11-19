@@ -37,6 +37,7 @@ public class Character
         Health += 20;
         Console.WriteLine($"{Name} naik level menjadi {Level}. HP: {Health}, Attack Power: {AttackPower}");
     }
+    
     public void GainMoney(int amount)
     {
         Money += amount;
