@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\April\\.nuget\\packages\\": {}
+    "C:\\Users\\Mutia Casella\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ima\\SEM 3 BISMILLAH\\Game_OOP\\Game-Design-Development\\Game-Design-Development.csproj",
+      "projectUniqueName": "D:\\2-Kuliah\\2-Tugas\\2-OOP\\6-The Haunted Isle\\revisi\\Game-Design-Development\\Game-Design-Development.csproj",
       "projectName": "Game-Design-Development",
-      "projectPath": "D:\\ima\\SEM 3 BISMILLAH\\Game_OOP\\Game-Design-Development\\Game-Design-Development.csproj",
-      "packagesPath": "C:\\Users\\April\\.nuget\\packages\\",
-      "outputPath": "D:\\ima\\SEM 3 BISMILLAH\\Game_OOP\\Game-Design-Development\\obj\\",
+      "projectPath": "D:\\2-Kuliah\\2-Tugas\\2-OOP\\6-The Haunted Isle\\revisi\\Game-Design-Development\\Game-Design-Development.csproj",
+      "packagesPath": "C:\\Users\\Mutia Casella\\.nuget\\packages\\",
+      "outputPath": "D:\\2-Kuliah\\2-Tugas\\2-OOP\\6-The Haunted Isle\\revisi\\Game-Design-Development\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\April\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Mutia Casella\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

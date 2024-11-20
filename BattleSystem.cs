@@ -4,7 +4,6 @@ public class BattleSystem
     {
         Console.WriteLine($"\n--- Pertarungan Dimulai: {enemy.Name} ---");
 
-
         while (enemy.Alive() && character.Health > 0)
         {
             Console.WriteLine("\nPilih tindakan:");
@@ -12,10 +11,8 @@ public class BattleSystem
             Console.WriteLine("2. Serangan jarak jauh");
             Console.WriteLine("3. Healing Potion");
 
-
             string choice = Console.ReadLine();
             IAttackStrategy attackStrategy;
-
 
             switch (choice)
             {
@@ -32,13 +29,13 @@ public class BattleSystem
                     attackStrategy = new LongRangeAttack();
                     break;
                 case "3":
-                    UseHealingPotion(character);
+                    HealthPotion potion = new HealthPotion();
+                    potion.Use(character);
                     continue;
                 default:
                     Console.WriteLine("Pilihan tidak valid. Coba lagi.");
                     continue;
             }
-
 
             bool attackMissed = !attackStrategy.Attack(character, enemy);
             if (attackMissed)
@@ -47,7 +44,6 @@ public class BattleSystem
                 enemy.TakeDamage(0, character); // enemy menyerang balik
             }
         }
-
 
         if (character.Health <= 0)
         {
@@ -58,13 +54,7 @@ public class BattleSystem
             Console.WriteLine($"{character.Name} mengalahkan {enemy.Name} dan mendapatkan uang dari musuh sebesar {enemy.Money}!");
             character.CurrencyManager.AddMoney(enemy.Money);
         }
-    }
 
-
-    private void UseHealingPotion(Character character)
-    {
-        int healAmount = 20;
-        character.Health += healAmount;
-        Console.WriteLine($"{character.Name} menggunakan potion dan memulihkan {healAmount} HP. Sisa HP: {character.Health}");
+        HealthPotion.ResetUsageCount();
     }
 }
