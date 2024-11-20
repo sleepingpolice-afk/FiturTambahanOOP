@@ -40,7 +40,7 @@ public class Pocong : Enemy
         // Saat Health kurang dari 50%, memiliki 60% kemungkinan untuk heal 10%
         if (Health <= 40 && random.NextDouble() < 0.6)
         {
-            int healAmount = (int)(0.1 * Health);
+            int healAmount = (int)(0.4 * Health);
             Health += healAmount;
             Console.WriteLine($"{Name} memulihkan {healAmount} HP. Total HP sekarang: {Health}");
         }
