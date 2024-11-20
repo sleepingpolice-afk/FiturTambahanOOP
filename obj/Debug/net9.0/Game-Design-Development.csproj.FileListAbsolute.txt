@@ -58,3 +58,18 @@ D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\
 D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
 D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
 D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.exe
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.deps.json
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.dll
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.pdb
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.dll
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\refint\Game-Design-Development.dll
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
+C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll

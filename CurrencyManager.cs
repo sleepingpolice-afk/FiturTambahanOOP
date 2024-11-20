@@ -1,11 +1,14 @@
 public class CurrencyManager
 {
-    public int TotalMoney { get; private set; }
+    public int TotalMoney { get; set; }
 
     public void AddMoney(int amount)
     {
-        TotalMoney += amount;
-        Console.WriteLine($"Uang ditambahkan sebesar {amount}. Total uang: {TotalMoney}");
+        if (amount > 0)
+        {
+            TotalMoney += amount;
+            Console.WriteLine($"Uang ditambahkan sebesar {amount}. Total uang: {TotalMoney}");
+        }
     }
 
     public bool DeductMoney(int amount)
@@ -21,5 +24,10 @@ public class CurrencyManager
             Console.WriteLine("Uang tidak cukup.");
             return false;
         }
+    }
+
+    public void ShowBalance()
+    {
+        Console.WriteLine($"Saldo saat ini: {TotalMoney}");
     }
 }

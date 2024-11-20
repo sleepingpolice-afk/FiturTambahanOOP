@@ -129,7 +129,7 @@ public class MoneyBag : Item
 
     public override void Use(Character character)
     {
-        character.GainMoney(Amount);
+        character.CurrencyManager.AddMoney(Amount);
         Console.WriteLine($"{Name} memberikan uang sebesar {Amount} kepada {character.Name}.");
         Amount = 0; // Setelah dipindahkan, uang habis
     }

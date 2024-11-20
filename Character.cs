@@ -1,4 +1,3 @@
-using System;
 public class Character
 {
     private static Character? instance;
@@ -6,7 +5,6 @@ public class Character
     public float Health { get; set; }
     public int Level { get; set; }
     public float AttackPower { get; set; }
-    public int Money { get; set; }
     public CurrencyManager CurrencyManager { get; set; } = new CurrencyManager();
 
     private Character()
@@ -15,7 +13,7 @@ public class Character
         Health = 100;
         Level = 1;
         AttackPower = 10;
-        Money = 100;
+        CurrencyManager.TotalMoney = 100;
     }
 
     public static Character Instance
@@ -36,16 +34,5 @@ public class Character
         AttackPower += 5;
         Health += 20;
         Console.WriteLine($"{Name} naik level menjadi {Level}. HP: {Health}, Attack Power: {AttackPower}");
-    }
-    
-    public void GainMoney(int amount)
-    {
-        Money += amount;
-        Console.WriteLine($"{Name} mendapatkan {amount} uang. Total uang: {Money}");
-    }
-
-    public void SpendMoney(int amount)
-    {
-        CurrencyManager.DeductMoney(amount);
     }
 }

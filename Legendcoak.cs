@@ -18,7 +18,6 @@ public class Legendcoak : Enemy
         // Jika damage == 0, ini adalah serangan balik setelah missed
         if (damage == 0)
         {
-            Console.WriteLine($"{Name} menyerang balik setelah serangan meleset!");
             float retaliationDamage = 7; // Besar damage serangan balik
             character.Health -= retaliationDamage;
             Console.WriteLine($"{character.Name} menerima {retaliationDamage} damage dari serangan balik! Sisa HP: {character.Health}");
