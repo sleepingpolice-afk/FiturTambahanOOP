@@ -23,7 +23,9 @@ public class Game
             Console.WriteLine("Kau menghembuskan nafas lega...");
             Thread.Sleep(3000);
             Console.WriteLine("Tak menyadari sosok di belakangmu tersenyum lebar…");
-            Console.WriteLine("GAME OVER; nikmati potongan rambut barumu!");
+            Console.Write("Game Over: ");
+            string message = GameOverMessage.GetMessage("Wrong Choice");
+            Console.WriteLine(message);
             return;
         }
         else if (choice == "1")
@@ -64,7 +66,7 @@ public class Game
             Console.WriteLine("> Kau meneguk ludah.");
             Console.WriteLine("1. Kabur");
             Console.WriteLine("2. Tawarkan semua uangmu");
-            Console.WriteLine("3. “Fighting monsters? Huh. I got records.”");
+            Console.WriteLine("3. “Fighting monsters? Huh. I got resume.”");
             Console.WriteLine("4. Pura-pura mati");
 
             string finalChoice = Console.ReadLine();
@@ -92,7 +94,9 @@ public class Game
             else
             {
                 Console.WriteLine("> Pilihan yang tidak membuatmu berakhir dengan baik...");
-                Console.WriteLine("GAME OVER; sosok itu menatapmu dengan puas.");
+                Console.Write("Game Over: ");
+                string message = GameOverMessage.GetMessage("Wrong Choice");
+                Console.WriteLine(message);
             }
         }
         else

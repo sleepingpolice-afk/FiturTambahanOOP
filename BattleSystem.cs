@@ -31,6 +31,11 @@ public class BattleSystem
                 case "3":
                     HealthPotion potion = new HealthPotion();
                     potion.Use(character);
+                    if (enemy.Alive())
+                    {
+                    Console.WriteLine($"{enemy.Name} memanfaatkan momen saat kau lengah!");
+                    enemy.TakeDamage(0, character);
+                    }
                     continue;
                 default:
                     Console.WriteLine("Pilihan tidak valid. Coba lagi.");
@@ -47,7 +52,9 @@ public class BattleSystem
 
         if (character.Health <= 0)
         {
-            Console.WriteLine($"{character.Name} telah kalah dalam pertarungan!");
+            Console.Write("Game Over: ");
+            string message = GameOverMessage.GetMessage(enemy.Name);
+            Console.WriteLine(message);
         }
         else if (!enemy.Alive())
         {

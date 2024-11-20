@@ -7,7 +7,7 @@ public class Legendcoak : Enemy
 
     public Legendcoak()
     {
-        Name = "Kecoak Legendaris";
+        Name = "Legencoak";
         Health = 200;
         Money = 100;
     }
@@ -19,7 +19,7 @@ public class Legendcoak : Enemy
         if (damage == 0)
         {
             Console.WriteLine($"{Name} menyerang balik setelah serangan meleset!");
-            float retaliationDamage = 15; // Besar damage serangan balik
+            float retaliationDamage = 7; // Besar damage serangan balik
             character.Health -= retaliationDamage;
             Console.WriteLine($"{character.Name} menerima {retaliationDamage} damage dari serangan balik! Sisa HP: {character.Health}");
             return; // Tidak melanjutkan logika lain
@@ -38,7 +38,6 @@ public class Legendcoak : Enemy
         if (Health <= 100 && !UltimateActivated && random.NextDouble() < 0.4)
         {
             Console.WriteLine($"{Name} mengaktifkan Ultimate: The Flying Horror! Hanya serangan jarak jauh yang dapat mengenai musuh.");
-            // AttackPower = (int)(AttackPower * 2);
             UltimateActivated = true;
         }
 
