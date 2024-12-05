@@ -48,6 +48,12 @@ class Program
                     continuePlaying = false;
                     //return;
                 }
+
+                Random random1 = new Random();
+                if(random1.Next(1, 80) < 100 && continuePlaying == true) //80 persen chance encounter Merchant
+                {
+                    NPCFactory.CreateNPC("Merchant").Interaction(character);
+                }
             }
             else if (level == 2)
             {
