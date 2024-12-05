@@ -1,15 +1,18 @@
 public class BattleSystem
 {
-    public void ExecuteBattle(Character character, Enemy enemy)
+    public void ExecuteBattle(Character character, Enemy enemy, Item inventory)
     {
         Console.WriteLine($"\n--- Pertarungan Dimulai: {enemy.Name} ---");
 
         while (enemy.Alive() && character.Health > 0)
         {
+            // Console.WriteLine("HP " + character.Name + ": " + character.Health);
+            //Console.WriteLine("HP " + enemy.Name + ": " + enemy.Health);
             Console.WriteLine("\nPilih tindakan:");
             Console.WriteLine("1. Serangan jarak dekat");
             Console.WriteLine("2. Serangan jarak jauh");
             Console.WriteLine("3. Healing Potion");
+            Console.WriteLine("4. Buka Tas");
 
             string choice = Console.ReadLine();
             IAttackStrategy attackStrategy;
@@ -30,12 +33,15 @@ public class BattleSystem
                     break;
                 case "3":
                     HealthPotion potion = new HealthPotion();
-                    potion.Use(character);
+                    potion.UseItem(potion.Name, character);
                     if (enemy.Alive())
                     {
                     Console.WriteLine($"{enemy.Name} memanfaatkan momen saat kau lengah!");
                     enemy.TakeDamage(0, character);
                     }
+                    continue;
+                case "4":
+                    Item.ShowInventory();
                     continue;
                 default:
                     Console.WriteLine("Pilihan tidak valid. Coba lagi.");

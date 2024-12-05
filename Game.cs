@@ -6,9 +6,16 @@ class Program
     static void Main(string[] args)
     {
         Character character = Character.Instance;
+        Item inventory = new Item();
+        GameOverMessage ending = new GameOverMessage();
         int level = 1;
+        character.CurrencyManager.AddMoney(100);
+        Console.WriteLine(character.CurrencyManager.TotalMoney);
 
         Console.WriteLine($"Kau adalah {character.Name} (HP: {character.Health}, Attack Power: {character.AttackPower})");
+
+        Item.AddItem(new HealthPotion().Name, 8);
+        // Item.AddItem
         bool continuePlaying = true;
 
         while (continuePlaying == true)
@@ -30,14 +37,16 @@ class Program
                 if (choice == "3")
                 {
                     Console.WriteLine("> Kau memutuskan untuk melawan : Tuyul!");
-                    ExecuteBattle(character, enemy);
+                    ExecuteBattle(character, enemy, inventory);
                 }
                 else
                 {
                     Console.WriteLine("Kau tidak menduga bocil itu menggigit tanganmu. Menolak melepaskan...");
                     Console.Write("Game Over: ");
                     Console.WriteLine(GameOverMessage.GetMessage("Wrong Choice"));
-                    return;
+                    character.Health = -1;
+                    continuePlaying = false;
+                    //return;
                 }
             }
             else if (level == 2)
@@ -55,14 +64,15 @@ class Program
                 if (choice == "3")
                 {
                     Console.WriteLine("> Kau memutuskan untuk melawan : Pocong!");
-                    ExecuteBattle(character, enemy);
+                    ExecuteBattle(character, enemy, inventory);
                 }
                 else
                 {
                     Console.WriteLine("Pilihan yang tidak membuatmu berakhir dengan baik...");
                     Console.Write("Game Over: ");
                     Console.WriteLine(GameOverMessage.GetMessage("Wrong Choice"));
-                    return;
+                    character.Health = -1; //instant death
+                    continuePlaying = false;
                 }
             }
             else if (level == 3)
@@ -78,7 +88,8 @@ class Program
                     Console.WriteLine("Tak menyadari sosok di belakangmu tersenyum lebar…");
                     Console.Write("Game Over: ");
                     Console.WriteLine(GameOverMessage.GetMessage("Wrong Choice"));
-                    return;
+                    character.Health = -1;
+                    continuePlaying = false;
                 }
                 else if (choice == "1")
                 {
@@ -121,14 +132,15 @@ class Program
                     if (finalChoice == "3")
                     {
                         Console.WriteLine("> Kau memutuskan untuk melawan : Legendcoak!");
-                        ExecuteBattle(character, enemy);
+                        ExecuteBattle(character, enemy, inventory);
                     }
                     else
                     {
                         Console.WriteLine("Pilihan yang tidak membuatmu berakhir dengan baik...");
                         Console.Write("Game Over: ");
                         Console.WriteLine(GameOverMessage.GetMessage("Wrong Choice"));
-                        return;
+                        GameOver(character, ending);
+                        //return;
                     }
                 }
             }
@@ -150,21 +162,60 @@ class Program
                 else
                 {
                     Console.WriteLine("Kau memutuskan untuk kembali ke dermaga dan belajar bahwa tidak ada uang di dunia ini yang patut ditukar dengan kebotakan");
-                    continuePlaying = false;
+                    character.Health = -1;
+                    continuePlaying = GameOver(character, ending);
+                    if(continuePlaying == false)
+                    {
+                        break;
+                    }
                 }
             }
             else
             {
                 Console.WriteLine("\nThink before you act next time....");
-                break;
+                level = 1;
+                continuePlaying = GameOver(character, ending);
+                if (continuePlaying == false)
+                {
+                    break;
+                }
             }
         }
     }
 
-    static void ExecuteBattle(Character character, Enemy enemy)
+    static bool GameOver(Character character, GameOverMessage ending)
+    {
+        bool continuePlaying;
+        Console.WriteLine("Masukkan nama ke Leaderboard: ");
+        ending.AddToLeaderboard(Console.ReadLine(), character.CurrencyManager.TotalMoney);
+        ending.ShowLeaderboard();
+        Console.WriteLine("Apakah kamu ingin bermain lagi? Press 1 to Continue....");
+        string? continuechoice = Console.ReadLine();
+
+        if (continuechoice == "1")
+        {
+            continuePlaying = true;
+            Console.WriteLine("Waktu berputar kembali ke awal...");
+            Thread.Sleep(2000);
+            character.Health = 100;
+            character.AttackPower = 10;
+            character.Level = 1;
+            character.CurrencyManager.TotalMoney = 300;
+            //Item.AddItem(new HealthPotion().Name, 8);
+        }
+        else
+        {
+            continuePlaying = false;
+            Console.WriteLine("Terima kasih telah bermain!");
+        }
+
+        return continuePlaying;
+    }
+
+    static void ExecuteBattle(Character character, Enemy enemy, Item inventory)
     {
         BattleSystem battleSystem = new BattleSystem();
-        battleSystem.ExecuteBattle(character, enemy);
+        battleSystem.ExecuteBattle(character, enemy, inventory);
     }
 
     static string GetLevelDescription(int level)

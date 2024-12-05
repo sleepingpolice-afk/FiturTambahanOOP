@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class GameOverMessage
 {
     private static Random random = new Random();
+    private Dictionary<string, int> leaderboard = new Dictionary<string, int>();
 
     private static List<string> defaultMessages = new List<string>
     {
@@ -52,5 +53,23 @@ public class GameOverMessage
             return defaultMessages[random.Next(defaultMessages.Count)];
         }
         return defaultMessages[random.Next(defaultMessages.Count)];
+    }
+
+    public void AddToLeaderboard(string name, int score)
+    {
+        leaderboard.Add(name, score);
+        //sort leaderboard gmn how ges
+        //var sortedByValue = leaderboard.OrderBy(entry => entry.Value).ToDictionary(entry => entry.Key, entry => entry.Value);
+    }
+
+    public void ShowLeaderboard()
+    {
+        Console.Clear();
+        Console.WriteLine("Leaderboard");
+        var sortedByValue = leaderboard.OrderByDescending(entry => entry.Value).ToDictionary(entry => entry.Key, entry => entry.Value);
+        foreach (var entry in sortedByValue)
+        {
+            Console.WriteLine($"{entry.Key}: {entry.Value}");
+        }
     }
 }

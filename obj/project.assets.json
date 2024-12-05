@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Wesley\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Documents\\Semester 3\\Game\\Game-Design-Development\\Game-Design-Development.csproj",
+      "projectUniqueName": "E:\\Tugas Kuliah\\Term 3\\OOP\\Kelompok Mutia\\Game-Design-Development.csproj",
       "projectName": "Game-Design-Development",
-      "projectPath": "C:\\Users\\user\\OneDrive\\Documents\\Semester 3\\Game\\Game-Design-Development\\Game-Design-Development.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\OneDrive\\Documents\\Semester 3\\Game\\Game-Design-Development\\obj\\",
+      "projectPath": "E:\\Tugas Kuliah\\Term 3\\OOP\\Kelompok Mutia\\Game-Design-Development.csproj",
+      "packagesPath": "C:\\Users\\Wesley\\.nuget\\packages\\",
+      "outputPath": "E:\\Tugas Kuliah\\Term 3\\OOP\\Kelompok Mutia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Wesley\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
