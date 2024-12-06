@@ -26,6 +26,8 @@ class Program
 
             if (level == 1)
             {
+                Elder elderNara = new Elder("Elder Nara", "Helper");
+                elderNara.Interact(level, character);
                 Console.WriteLine("Kau menunduk untuk melihat bocil botak balas menatapmu dengan matanya yang besar.");
                 Console.WriteLine("Bocil itu mendadak menyeringai, memamerkan deretan gigi kecil runcing seperti Payara.");
                 Console.WriteLine("Bocil itu terkikik. Suaranya melengkik nyaring, bergema di dok kecil itu.");
@@ -83,6 +85,8 @@ class Program
             }
             else if (level == 3)
             {
+                Elder elderNara = new Elder("Elder Nara", "Helper");
+                elderNara.Interact(level, character);
                 Console.WriteLine("Kau melarikan diri ke dalam gua. Setelah beberapa saat, tak ada suara yang terdengar.");
                 Console.WriteLine("1. Jelajahi gua");
                 Console.WriteLine("2. Keluar");
@@ -204,12 +208,12 @@ class Program
                     character.Health = -1;
                     continuePlaying = false;
                 }
-                // =========================== End of Story Level 4 ===========================
             }
 
             else if (level == 5)
             {
-                // === Level 5 Code Start ===
+                Elder elderNara = new Elder("Elder Nara", "Helper");
+                elderNara.Interact(level, character);
                 Console.WriteLine("Kau memasuki sebuah kuil kuno yang tertutup bayangan gelap.");
                 Console.WriteLine("Relief dinding di kuil itu seperti mengawasi setiap langkahmu.");
                 Console.WriteLine("1. Periksa relief itu lebih dekat.");
@@ -262,11 +266,9 @@ class Program
                     return;
                 }
             }
-            // === Level 5 Code End ===
 
             else if (level == 6)
             {
-                // === Level 6 Code Start ===
                 Console.WriteLine("Kau mencapai puncak perjalananmu, di depanmu adalah singgasana bercahaya.");
                 Console.WriteLine("Di atas singgasana itu duduk seorang raja berjubah emas, memegang tongkat yang memancarkan aura keabadian.");
                 Console.WriteLine("1. Tantang raja itu");

@@ -54,6 +54,8 @@ public class BattleSystem
                 Console.WriteLine($"{enemy.Name} memanfaatkan kesempatan serangan meleset!");
                 enemy.TakeDamage(0, character); // enemy menyerang balik
             }
+
+            character.activeDebuff.ApplyDebuff(character);
         }
 
         if (character.Health <= 0)

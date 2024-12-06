@@ -7,6 +7,10 @@ public class Character
     public float AttackPower { get; set; }
     public CurrencyManager CurrencyManager { get; set; } = new CurrencyManager();
 
+    public IDebuff activeDebuff;
+
+    public bool hasDebuff;
+
     private Character()
     {
         Name = "Pemburu Harta Karun";
@@ -14,6 +18,7 @@ public class Character
         Level = 1;
         AttackPower = 10;
         CurrencyManager.TotalMoney = 100;
+        activeDebuff = new NoneDebuff();
     }
 
     public static Character Instance
@@ -34,5 +39,11 @@ public class Character
         AttackPower += 5;
         Health += 20;
         Console.WriteLine($"{Name} naik level menjadi {Level}. HP: {Health}, Attack Power: {AttackPower}");
+    }
+
+    public void ApplyDebuff(IDebuff debuff)
+    {
+        activeDebuff = debuff;
+        hasDebuff = true;
     }
 }

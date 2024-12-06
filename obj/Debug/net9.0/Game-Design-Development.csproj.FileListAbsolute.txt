@@ -103,3 +103,18 @@ E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/ref/Game-Design-Devel
 /Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.pdb
 /Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
 /Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/ref/Game-Design-Development.dll
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.exe
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.deps.json
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.dll
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.pdb
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.dll
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\refint\Game-Design-Development.dll
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.pdb
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
+E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\ref\Game-Design-Development.dll

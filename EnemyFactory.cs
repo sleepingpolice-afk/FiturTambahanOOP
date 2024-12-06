@@ -14,6 +14,14 @@ public class EnemyFactory
         {
             return new Legendcoak(); // Level bos
         }
+        else if (level == 4)
+        {
+            return new FireDragon();
+        }
+        else if (level == 5)
+        {
+            return new EternalKing();
+        }
         else
         {
             return new Tuyul(); // Default to Legendcoak for higher levels

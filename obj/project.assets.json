@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/Users/raditya/.nuget/packages/": {}
+    "C:\\Users\\Wesley\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/Game-Design-Development.csproj",
+      "projectUniqueName": "E:\\Tugas Kuliah\\Term 3\\OOP\\Kelompok Mutia\\Game-Design-Development.csproj",
       "projectName": "Game-Design-Development",
-      "projectPath": "/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/Game-Design-Development.csproj",
-      "packagesPath": "/Users/raditya/.nuget/packages/",
-      "outputPath": "/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/",
+      "projectPath": "E:\\Tugas Kuliah\\Term 3\\OOP\\Kelompok Mutia\\Game-Design-Development.csproj",
+      "packagesPath": "C:\\Users\\Wesley\\.nuget\\packages\\",
+      "outputPath": "E:\\Tugas Kuliah\\Term 3\\OOP\\Kelompok Mutia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/raditya/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Wesley\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
