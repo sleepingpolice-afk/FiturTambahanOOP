@@ -151,6 +151,164 @@ class Program
                 }
             }
 
+            else if (level == 4)
+            {
+                // =========================== Story Level 4 ===========================
+                Console.WriteLine("Kau keluar dari gua dan menemukan dirimu di padang gurun yang luas. Angin panas menerpa wajahmu.");
+                Console.WriteLine("Di kejauhan, kau melihat sesuatu bergerak. Bayangan hitam besar...");
+                Console.WriteLine("Saat kau mendekat, kau menyadari itu adalah seekor naga yang bersinar di bawah matahari.");
+                Console.WriteLine("Naga itu membuka matanya yang besar dan menyala-nyala, menatapmu dengan penuh perhitungan.");
+                Console.WriteLine("1. Berlutut dan memberikan penghormatan");
+                Console.WriteLine("2. Melarikan diri");
+                Console.WriteLine("3. Mengangkat senjata dan bersiap melawan");
+
+                string choice = Console.ReadLine();
+
+                if (choice == "1")
+                {
+                    Console.WriteLine("> Naga itu tampak terkejut, tetapi ia tersenyum kecil. Ia memberikanmu sebuah kunci emas dan berkata:");
+                    Console.WriteLine("\"Kunci ini akan membawamu ke tempat yang lebih gelap, tetapi hadiah menantimu di sana.\"");
+                    Console.WriteLine("Kau mendapatkan Kunci Emas!");
+                    Item.AddItem("Golden Key", 1);
+                    level++;
+                }
+                else if (choice == "2")
+                {
+                    Console.WriteLine("> Kau mencoba melarikan diri, tetapi naga itu mengejarmu dengan kecepatan luar biasa.");
+                    Console.WriteLine("Dalam sekejap, ia mendarat di hadapanmu dan mengaum dengan keras.");
+                    Console.WriteLine("Kau terjatuh, dan naga itu mengakhiri hidupmu...");
+                    Console.Write("Game Over: ");
+                    Console.WriteLine(GameOverMessage.GetMessage("Wrong Choice"));
+                    character.Health = -1;
+                    continuePlaying = false;
+                }
+                else if (choice == "3")
+                {
+                    Console.WriteLine("> Kau mengangkat senjata dan memutuskan untuk melawan : Naga Api!");
+                    ExecuteBattle(character, enemy, inventory);
+
+                    if (enemy.Alive())
+                    {
+                        Console.WriteLine("Naga itu terlalu kuat. Kau kalah dalam pertempuran...");
+                        Console.Write("Game Over: ");
+                        Console.WriteLine(GameOverMessage.GetMessage("Wrong Choice"));
+                        character.Health = -1;
+                        continuePlaying = false;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Pilihan tidak jelas, naga itu bingung tapi tetap memakanmu.");
+                    Console.Write("Game Over: ");
+                    Console.WriteLine(GameOverMessage.GetMessage("Wrong Choice"));
+                    character.Health = -1;
+                    continuePlaying = false;
+                }
+                // =========================== End of Story Level 4 ===========================
+            }
+
+            else if (level == 5)
+            {
+                // === Level 5 Code Start ===
+                Console.WriteLine("Kau memasuki sebuah kuil kuno yang tertutup bayangan gelap.");
+                Console.WriteLine("Relief dinding di kuil itu seperti mengawasi setiap langkahmu.");
+                Console.WriteLine("1. Periksa relief itu lebih dekat.");
+                Console.WriteLine("2. Abaikan dan terus maju.");
+
+                string choice = Console.ReadLine();
+                if (choice == "1")
+                {
+                    Console.WriteLine("> Relief itu bergerak! Sebuah lengan batu mencoba menangkapmu!");
+                    Console.WriteLine("1. Kabur");
+                    Console.WriteLine("2. Serang relief itu dengan senjatamu.");
+
+                    string innerChoice = Console.ReadLine();
+                    if (innerChoice == "2")
+                    {
+                        Console.WriteLine("> Kau berhasil menghancurkan lengan batu itu, dan melanjutkan perjalanan.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Relief itu menangkapmu dan menyeretmu ke kegelapan...");
+                        Console.Write("Game Over: ");
+                        Console.WriteLine(GameOverMessage.GetMessage("Trapped in the Shadows"));
+                        GameOver(character, ending);
+                        continuePlaying = false;
+                        return;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Kau terus maju, tapi sesuatu terasa tidak beres...");
+                }
+
+                Console.WriteLine("Saat kau mencapai tengah kuil, seekor naga bayangan muncul, matanya memancarkan kilatan merah.");
+                Console.WriteLine("1. Bernegosiasi");
+                Console.WriteLine("2. Serang langsung");
+
+                string finalChoice = Console.ReadLine();
+                if (finalChoice == "2")
+                {
+                    Console.WriteLine("> Kau memutuskan untuk melawan : Shadow Dragon!");
+                    ExecuteBattle(character, enemy, inventory);
+                }
+                else
+                {
+                    Console.WriteLine("Naga itu mengabaikan usahamu untuk bernegosiasi dan melahapmu hidup-hidup...");
+                    Console.Write("Game Over: ");
+                    Console.WriteLine(GameOverMessage.GetMessage("Eaten by the Dragon"));
+                    GameOver(character, ending);
+                    continuePlaying = false;
+                    return;
+                }
+            }
+            // === Level 5 Code End ===
+
+            else if (level == 6)
+            {
+                // === Level 6 Code Start ===
+                Console.WriteLine("Kau mencapai puncak perjalananmu, di depanmu adalah singgasana bercahaya.");
+                Console.WriteLine("Di atas singgasana itu duduk seorang raja berjubah emas, memegang tongkat yang memancarkan aura keabadian.");
+                Console.WriteLine("1. Tantang raja itu");
+                Console.WriteLine("2. Bersujud dan meminta ampun");
+
+                string choice = Console.ReadLine();
+                if (choice == "1")
+                {
+                    Console.WriteLine("> Kau memutuskan untuk melawan : Eternal King!");
+                    ExecuteBattle(character, enemy, inventory);
+
+                    if (character.Health > 0 && !enemy.Alive())
+                    {
+                        Console.WriteLine("Selamat! Kau telah mengalahkan Eternal King!");
+                        Console.WriteLine("Raja itu memberikan tongkatnya sebagai simbol kemenanganmu.");
+                        Console.WriteLine("Dunia kini berada dalam kedamaian berkat keberanianmu...");
+                        Console.WriteLine("Ending: The Hero's Triumph");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Raja itu terlalu kuat. Kau kalah...");
+                        Console.Write("Game Over: ");
+                        Console.WriteLine(GameOverMessage.GetMessage("Defeated by the Eternal King"));
+                        GameOver(character, ending);
+                        continuePlaying = false;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Raja itu memandangmu dengan jijik. 'Pengecut tidak layak hidup,' katanya.");
+                    Console.WriteLine("Kau dihabisi oleh pasukan raja...");
+                    Console.Write("Game Over: ");
+                    Console.WriteLine(GameOverMessage.GetMessage("Fell to Cowardice"));
+                    GameOver(character, ending);
+                    continuePlaying = false;
+                }
+
+                continuePlaying = false; // Ending definitif
+                Console.WriteLine("Terima kasih telah bermain! Sampai jumpa di petualangan selanjutnya.");
+            }
+            // === Level 6 Code End ===
+
             if (character.Health > 0 && !enemy.Alive())
             {
                 Console.WriteLine($"\nSelamat! Kamu berhasil mengalahkan {enemy.Name}!");

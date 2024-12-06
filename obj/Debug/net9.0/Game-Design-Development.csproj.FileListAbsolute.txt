@@ -1,90 +1,105 @@
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.exe
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.deps.json
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.dll
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.pdb
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.dll
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\refint\Game-Design-Development.dll
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
-C:\Users\azras\Documents\The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\refint\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.exe
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.deps.json
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.pdb
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.exe
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.deps.json
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.dll
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.pdb
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.dll
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\refint\Game-Design-Development.dll
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
-D:\ima\SEM 3 BISMILLAH\Game_OOP\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.exe
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.deps.json
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.pdb
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\refint\Game-Design-Development.dll
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
-D:\2-Kuliah\2-Tugas\2-OOP\6-The Haunted Isle\revisi\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.exe
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.deps.json
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.dll
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\bin\Debug\net9.0\Game-Design-Development.pdb
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.dll
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\refint\Game-Design-Development.dll
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.pdb
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
-C:\Users\user\OneDrive\Documents\Semester 3\Game\Game-Design-Development\obj\Debug\net9.0\ref\Game-Design-Development.dll
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.exe
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.deps.json
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.runtimeconfig.json
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.dll
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\bin\Debug\net9.0\Game-Design-Development.pdb
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.AssemblyInfoInputs.cache
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.AssemblyInfo.cs
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.csproj.CoreCompileInputs.cache
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.sourcelink.json
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.dll
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\refint\Game-Design-Development.dll
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.pdb
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\Game-Design-Development.genruntimeconfig.cache
-E:\Tugas Kuliah\Term 3\OOP\Kelompok Mutia\obj\Debug\net9.0\ref\Game-Design-Development.dll
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfoInputs.cache
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfo.cs
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.csproj.CoreCompileInputs.cache
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.sourcelink.json
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.exe
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.deps.json
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.runtimeconfig.json
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.dll
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.pdb
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.dll
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/refint/Game-Design-Development.dll
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.pdb
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
+C:/Users/azras/Documents/The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/ref/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfoInputs.cache
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfo.cs
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.csproj.CoreCompileInputs.cache
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.sourcelink.json
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/refint/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.pdb
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.exe
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.deps.json
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.runtimeconfig.json
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.pdb
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/Game-Design-Development/obj/Debug/net9.0/ref/Game-Design-Development.dll
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.exe
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.deps.json
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.runtimeconfig.json
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.dll
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.pdb
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfoInputs.cache
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfo.cs
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.csproj.CoreCompileInputs.cache
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.sourcelink.json
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.dll
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/refint/Game-Design-Development.dll
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.pdb
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
+D:/ima/SEM 3 BISMILLAH/Game_OOP/Game-Design-Development/obj/Debug/net9.0/ref/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.exe
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.deps.json
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.runtimeconfig.json
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.pdb
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfoInputs.cache
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfo.cs
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.csproj.CoreCompileInputs.cache
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.sourcelink.json
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/refint/Game-Design-Development.dll
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.pdb
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
+D:/2-Kuliah/2-Tugas/2-OOP/6-The Haunted Isle/revisi/Game-Design-Development/obj/Debug/net9.0/ref/Game-Design-Development.dll
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.exe
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.deps.json
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.runtimeconfig.json
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.dll
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/bin/Debug/net9.0/Game-Design-Development.pdb
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfoInputs.cache
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.AssemblyInfo.cs
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.csproj.CoreCompileInputs.cache
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.sourcelink.json
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.dll
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/refint/Game-Design-Development.dll
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.pdb
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
+C:/Users/user/OneDrive/Documents/Semester 3/Game/Game-Design-Development/obj/Debug/net9.0/ref/Game-Design-Development.dll
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/bin/Debug/net9.0/Game-Design-Development.exe
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/bin/Debug/net9.0/Game-Design-Development.deps.json
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/bin/Debug/net9.0/Game-Design-Development.runtimeconfig.json
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/bin/Debug/net9.0/Game-Design-Development.dll
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/bin/Debug/net9.0/Game-Design-Development.pdb
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.AssemblyInfoInputs.cache
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.AssemblyInfo.cs
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.csproj.CoreCompileInputs.cache
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.sourcelink.json
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.dll
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/refint/Game-Design-Development.dll
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.pdb
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
+E:/Tugas Kuliah/Term 3/OOP/Kelompok Mutia/obj/Debug/net9.0/ref/Game-Design-Development.dll
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/bin/Debug/net9.0/Game-Design-Development
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/bin/Debug/net9.0/Game-Design-Development.deps.json
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/bin/Debug/net9.0/Game-Design-Development.runtimeconfig.json
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/bin/Debug/net9.0/Game-Design-Development.dll
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/bin/Debug/net9.0/Game-Design-Development.pdb
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.GeneratedMSBuildEditorConfig.editorconfig
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.AssemblyInfoInputs.cache
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.AssemblyInfo.cs
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.csproj.CoreCompileInputs.cache
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.sourcelink.json
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.dll
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/refint/Game-Design-Development.dll
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.pdb
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/Game-Design-Development.genruntimeconfig.cache
+/Users/raditya/Documents/Kuliah/Semester_3/Kelas_OOP/FiturTambahanOOP/obj/Debug/net9.0/ref/Game-Design-Development.dll
